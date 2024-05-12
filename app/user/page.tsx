@@ -1,7 +1,9 @@
 import { Suspense } from "react";
 
+export const dynamic = "force-dynamic";
+
 export default async function UserPage() {
-      // await waitSeconds(3);
+      await waitSeconds(3);
       return (
             <div className="flex min-h-screen flex-col items-center justify-between p-24">
                   <UserComponent />
