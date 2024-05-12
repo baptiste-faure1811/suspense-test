@@ -3,7 +3,7 @@ import { Suspense } from "react";
 export const dynamic = "force-dynamic";
 
 export default async function UserPage() {
-      await waitSeconds(3);
+      await waitSeconds(2);
       return (
             <div className="flex min-h-screen flex-col items-center justify-between p-24">
                   <UserComponent />
@@ -28,7 +28,7 @@ function UserComponentSkeleton() {
 }
 
 async function UserComponentContent() {
-      await waitSeconds(7);
+      await waitSeconds(3);
       return (
             <div>
                   <p>User Component Content, displayed AFTER delay</p>
